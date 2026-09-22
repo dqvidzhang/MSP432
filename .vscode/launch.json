@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "MSP432P401R Debug",
+      "type": "cortex-debug",
+      "request": "launch",
+      "servertype": "openocd",
+      "cwd": "${workspaceFolder}",
+      "executable": "${workspaceFolder}/build/msp432_app.elf",
+      "gdbPath": "C:/ti/arm-gnu-toolchain-15.3.rel1-mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-gdb.exe",
+      "serverpath": "C:/ti/openocd_win_1.5.2.82/openocd/bin/openocd.exe",
+      "configFiles": [
+        "board/ti_msp432_launchpad.cfg"
+      ],
+      "runToEntryPoint": "main",
+      "preLaunchTask": "Build MSP432"
+    }
+  ]
+}
